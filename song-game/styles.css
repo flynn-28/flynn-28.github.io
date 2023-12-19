@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#game-container {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#completedLevels {
+    margin-top: 20px;
+}
+
+#timer {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#currentLetter {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#score {
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#highScore {
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
