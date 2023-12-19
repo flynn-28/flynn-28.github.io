@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet Song Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Alphabet Song Game</h1>
+        <p>Type a song starting with each letter of the alphabet:</p>
+        <div id="startButton"><button id="startBtn" onclick="startGame();">Start</button></div>
+        <center><div><button id="restartBtn" onclick="restartGame()" style="display:none;">Restart</button></div></center>
+        <div id="main" style="display:none;">
+            <div id="timer"></div>
+            <div id="currentLetter"></div>
+            <div id="score">Score: 0</div>
+            <div id="highScore">High Score: 0</div>
+
+            <div id="game">
+                <label for="songInput">Song for the letter:</label>
+                <input type="text" id="songInput" autocomplete="off" onkeyup="handleKeyUp(event)">
+                <button id="enter" onclick="checkSong()">Next Letter</button>
+                <p id="result"></p>
+            </div>
+
+            <div id="completedLevels"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
